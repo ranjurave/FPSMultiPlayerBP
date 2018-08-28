@@ -1,16 +1,14 @@
-﻿Log file open, 08/25/18 11:45:11
+﻿Log file open, 08/28/18 08:59:27
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
-LogWindows: Failed to load 'VSPerf140.dll' (GetLastError=126)
-LogWindows: File 'VSPerf140.dll' does not exist
 LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
 LogWindows: File 'VtuneApi.dll' does not exist
 LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
 LogWindows: File 'VtuneApi32e.dll' does not exist
 LogInit: Display: Running engine for game: FPSMultiPlayerBP
 LogPlatformFile: Not using cached read wrapper
-LogTaskGraph: Started task graph with 5 named threads and 35 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.402825
+LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.291978
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: Display: ICU TimeZone Detection - Raw Offset: +12:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -94,7 +92,7 @@ LogPluginManager: Mounting plugin ProceduralMeshComponent
 LogPluginManager: Mounting plugin RuntimePhysXCooking
 LogPluginManager: Mounting plugin SteamVR
 LogPluginManager: Mounting plugin WindowsMoviePlayer
-LogStreaming: Display: Took  0.037s to configure plugins.
+LogStreaming: Display: Took  0.202s to configure plugins.
 LogInit: Using libcurl 7.55.1-DEV
 LogInit:  - built for x86_64-pc-win32
 LogInit:  - supports SSL with OpenSSL/1.0.2h
@@ -115,17 +113,19 @@ LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connecti
 LogInit:  - LocalHostAddr = Default
 LogInit:  - BufferSize = 65536
 LogOnline: Display: STEAM: Loading Steam SDK 1.39
+LogOnline: Warning: STEAM: Steam API disabled!
+LogOnline: Display: STEAM: OnlineSubsystemSteam::Shutdown()
 LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
 LogInit: Build: ++UE4+Release-4.20-CL-4233996
 LogInit: Engine Version: 4.20.1-4233996+++UE4+Release-4.20
 LogInit: Compatible Engine Version: 4.20.0-4212847+++UE4+Release-4.20
 LogInit: Net CL: 4212847
-LogInit: OS: Windows 10 (), CPU: Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz, GPU: Radeon RX 580 Series
+LogInit: OS: Windows 10 (), CPU: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, GPU: Intel(R) HD Graphics 530
 LogInit: Compiled (64-bit): Jul 26 2018 10:07:30
 LogInit: Compiled with Visual C++: 19.13.26129.00
 LogInit: Build Configuration: Development
 LogInit: Branch Name: ++UE4+Release-4.20
-LogInit: Command Line:  /Game/Maps/MainMenu -game -PIEVIACONSOLE -ResX=1280 -ResY=720  -Multiprocess -messaging -SessionName="Play in Standalone Game" -windowed 
+LogInit: Command Line: 
 LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/Win64/
 LogInit: Installed Engine Build: 1
 LogDevObjectVersion: Number of dev versions registered: 20
@@ -152,568 +152,322 @@ LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 1
 LogStreaming: Display: Took  0.001s to delete old logs.
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2018.08.24-23.45.12:046][  0]LogInit: Selected Device Profile: [Windows]
-[2018.08.24-23.45.12:046][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2018.08.24-23.45.12:049][  0]LogHAL: Display: Platform has ~ 16 GB [17098670080 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
-[2018.08.24-23.45.12:049][  0]LogInit: Setting Device Profile CVar: [[r.Vulkan.UseRealUBs:1]]
-[2018.08.24-23.45.12:049][  0]LogInit: Going up to parent DeviceProfile []
-[2018.08.24-23.45.12:049][  0]LogInit: Computer: RANJU
-[2018.08.24-23.45.12:049][  0]LogInit: User: OEM
-[2018.08.24-23.45.12:049][  0]LogInit: CPU Page size=4096, Cores=6
-[2018.08.24-23.45.12:049][  0]LogInit: High frequency timer resolution =3.117184 MHz
-[2018.08.24-23.45.12:049][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2018.08.24-23.45.12:049][  0]LogMemory: Platform Memory Stats for Windows
-[2018.08.24-23.45.12:049][  0]LogMemory: Process Physical Memory: 129.71 MB used, 129.71 MB peak
-[2018.08.24-23.45.12:049][  0]LogMemory: Process Virtual Memory: 103.23 MB used, 103.23 MB peak
-[2018.08.24-23.45.12:049][  0]LogMemory: Physical Memory: 7152.18 MB used,  9154.38 MB free, 16306.56 MB total
-[2018.08.24-23.45.12:049][  0]LogMemory: Virtual Memory: 4762.84 MB used,  9154.38 MB free, 134217728.00 MB total
-[2018.08.24-23.45.12:077][  0]LogInit: Using OS detected language (en-US).
-[2018.08.24-23.45.12:077][  0]LogInit: Using OS detected locale (en-NZ).
-[2018.08.24-23.45.12:077][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
-[2018.08.24-23.45.12:354][  0]LogStreaming: Display: Took  0.277s to InitEngineTextLocalization.
-[2018.08.24-23.45.12:441][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2018.08.24-23.45.12:441][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2018.08.24-23.45.12:513][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2018.08.24-23.45.12:513][  0]LogD3D11RHI: D3D11 adapters:
-[2018.08.24-23.45.12:555][  0]LogD3D11RHI:    0. 'Radeon RX 580 Series' (Feature Level 11_0)
-[2018.08.24-23.45.12:555][  0]LogD3D11RHI:       8137/0/8153 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:3, VendorId:0x1002
-[2018.08.24-23.45.12:558][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2018.08.24-23.45.12:559][  0]LogD3D11RHI:       0/0/8153 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2018.08.24-23.45.12:559][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2018.08.24-23.45.12:566][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2018.08.24-23.45.12:566][  0]LogD3D11RHI:     GPU DeviceId: 0x67df (for the marketing name, search the web for "GPU Device Id")
-[2018.08.24-23.45.12:566][  0]LogWindows: EnumDisplayDevices:
-[2018.08.24-23.45.12:566][  0]LogWindows:    0. 'Radeon RX 580 Series' (P:1 D:1)
-[2018.08.24-23.45.12:567][  0]LogWindows:    1. 'Radeon RX 580 Series' (P:0 D:1)
-[2018.08.24-23.45.12:567][  0]LogWindows:    2. 'Radeon RX 580 Series' (P:0 D:1)
-[2018.08.24-23.45.12:567][  0]LogWindows:    3. 'Radeon RX 580 Series' (P:0 D:0)
-[2018.08.24-23.45.12:568][  0]LogWindows:    4. 'Radeon RX 580 Series' (P:0 D:0)
-[2018.08.24-23.45.12:568][  0]LogWindows:    5. 'Radeon RX 580 Series' (P:0 D:0)
-[2018.08.24-23.45.12:568][  0]LogWindows:    6. 'Radeon RX 580 Series' (P:0 D:0)
-[2018.08.24-23.45.12:569][  0]LogWindows:    7. 'Radeon RX 580 Series' (P:0 D:0)
-[2018.08.24-23.45.12:569][  0]LogWindows:    8. 'Radeon RX 580 Series' (P:0 D:0)
-[2018.08.24-23.45.12:569][  0]LogWindows:    9. 'Radeon RX 580 Series' (P:0 D:0)
-[2018.08.24-23.45.12:570][  0]LogWindows:    10. 'Radeon RX 580 Series' (P:0 D:0)
-[2018.08.24-23.45.12:570][  0]LogWindows:    11. 'Radeon RX 580 Series' (P:0 D:0)
-[2018.08.24-23.45.12:570][  0]LogWindows:    12. 'Radeon RX 580 Series' (P:0 D:0)
-[2018.08.24-23.45.12:570][  0]LogWindows:    13. 'Radeon RX 580 Series' (P:0 D:0)
-[2018.08.24-23.45.12:571][  0]LogWindows:    14. 'Radeon RX 580 Series' (P:0 D:0)
-[2018.08.24-23.45.12:571][  0]LogWindows:    15. 'Radeon RX 580 Series' (P:0 D:0)
-[2018.08.24-23.45.12:572][  0]LogWindows: DebugString: FoundDriverCount:16 
-[2018.08.24-23.45.12:572][  0]LogD3D11RHI:     Adapter Name: Radeon RX 580 Series
-[2018.08.24-23.45.12:572][  0]LogD3D11RHI:   Driver Version: Adrenalin 18.5.2 (internal:24.20.11019.1004, unified:24.20.11019.1004)
-[2018.08.24-23.45.12:572][  0]LogD3D11RHI:      Driver Date: 5-29-2018
-[2018.08.24-23.45.12:572][  0]LogRHI: Texture pool is 5695 MB (70% of 8137 MB)
-[2018.08.24-23.45.13:625][  0]LogD3D11RHI: Async texture creation enabled
-[2018.08.24-23.45.13:636][  0]LogD3D11RHI: GPU Timing Frequency: 25.000000 (Debug: 2 1)
-[2018.08.24-23.45.13:638][  0]LogShaderCompilers: Guid format shader working directory is 9 characters bigger than the processId version (D:/Unreal Projects/FPSMultiPlayerBP/Intermediate/Shaders/WorkingDirectory/5440/).
-[2018.08.24-23.45.13:638][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/OEM/AppData/Local/Temp/UnrealShaderWorkingDir/957E8890418446A6BD52388A11DF4AA1/'.
-[2018.08.24-23.45.13:949][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
-[2018.08.24-23.45.13:960][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
-[2018.08.24-23.45.13:971][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
-[2018.08.24-23.45.13:977][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
-[2018.08.24-23.45.13:977][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2018.08.24-23.45.14:042][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
-[2018.08.24-23.45.14:042][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
-[2018.08.24-23.45.14:042][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2018.08.24-23.45.14:600][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2018.08.24-23.45.14:641][  0]LogDerivedDataCache: Loaded boot cache 0.04s 71MB C:/Users/OEM/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc.
-[2018.08.24-23.45.14:641][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/OEM/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc
-[2018.08.24-23.45.14:641][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file D:/Unreal Projects/FPSMultiPlayerBP/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2018.08.24-23.45.14:641][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2018.08.24-23.45.14:641][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file D:/Unreal Projects/FPSMultiPlayerBP/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2018.08.24-23.45.14:641][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2018.08.24-23.45.14:651][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2018.08.24-23.45.14:663][  0]LogDerivedDataCache: Using Local data cache path C:/Users/OEM/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2018.08.24-23.45.14:663][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2018.08.24-23.45.14:663][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2018.08.24-23.45.14:684][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2018.08.24-23.45.14:686][  0]LogSlate: Using FreeType 2.6.0
-[2018.08.24-23.45.14:686][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2018.08.24-23.45.14:723][  0]LogInit: Using OS detected language (en-US).
-[2018.08.24-23.45.14:723][  0]LogInit: Using OS detected locale (en-NZ).
-[2018.08.24-23.45.14:723][  0]LogTextLocalizationManager: No localization for 'en-US' exists, so 'en' will be used for the language.
-[2018.08.24-23.45.14:723][  0]LogTextLocalizationManager: No localization for 'en-NZ' exists, so 'en' will be used for the locale.
-[2018.08.24-23.45.14:934][  0]LogStreaming: Display: Took  0.212s to InitGameTextLocalization.
-[2018.08.24-23.45.14:940][  0]LogAssetRegistry: FAssetRegistry took 0.0031 seconds to start up
-[2018.08.24-23.45.15:079][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 1 prioritized culture(s) in 0.007226 seconds
-[2018.08.24-23.45.15:155][  0]LogInit: Selected Device Profile: [Windows]
-[2018.08.24-23.45.15:256][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2018.08.24-23.45.15:261][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
-[2018.08.24-23.45.15:261][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
-[2018.08.24-23.45.15:261][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2018.08.24-23.45.15:261][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
-[2018.08.24-23.45.15:334][  0]LogNetVersion: FPSMultiPlayerBP 1.0.0, NetCL: 4212847, EngineNetVer: 5, GameNetVer: 0 (Checksum: 3398490363)
-[2018.08.24-23.45.15:739][  0]LogMoviePlayer: Initializing movie player
-[2018.08.24-23.45.15:966][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2018.08.24-23.45.15:978][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2018.08.24-23.45.16:067][  0]SourceControl: Source control is disabled
-[2018.08.24-23.45.16:067][  0]SourceControl: Source control is disabled
-[2018.08.24-23.45.16:069][  0]SourceControl: Source control is disabled
-[2018.08.24-23.45.16:203][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2018.08.24-23.45.16:307][  0]LogOcInput: OculusInput pre-init called
-[2018.08.24-23.45.16:314][  0]LogUObjectArray: 42177 objects as part of root set at end of initial load.
-[2018.08.24-23.45.16:314][  0]LogUObjectAllocator: 7442616 out of 0 bytes used by permanent object pool.
-[2018.08.24-23.45.16:314][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2018.08.24-23.45.16:360][  0]LogEngine: Initializing Engine...
-[2018.08.24-23.45.16:361][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2018.08.24-23.45.16:372][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
-[2018.08.24-23.45.16:372][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2018.08.24-23.45.16:373][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
-[2018.08.24-23.45.16:373][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2018.08.24-23.45.16:500][  0]LogInit: Initializing FReadOnlyCVARCache
-[2018.08.24-23.45.16:532][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2018.08.24-23.45.16:552][  0]LogInit: FAudioDevice initialized.
-[2018.08.24-23.45.16:563][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
-[2018.08.24-23.45.16:568][  0]LogInit: Texture streaming: Enabled
-[2018.08.24-23.45.16:779][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.08.24-23.45.16:779][  0]LogInit: Display: Game Engine Initialized.
-[2018.08.24-23.45.16:779][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
-[2018.08.24-23.45.16:779][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
-[2018.08.24-23.45.16:779][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2018.08.24-23.45.16:779][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
-[2018.08.24-23.45.16:779][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2018.08.24-23.45.16:795][  0]LogInit: Display: Starting Game.
-[2018.08.24-23.45.16:795][  0]LogNet: Browse: /Game/Maps/MainMenu?Name=Player
-[2018.08.24-23.45.16:795][  0]LogLoad: LoadMap: /Game/Maps/MainMenu?Name=Player
-[2018.08.24-23.45.16:834][  0]LogAIModule: Creating AISystem for world MainMenu
-[2018.08.24-23.45.16:942][  0]LogLoad: Game class is 'ThirdPersonGameMode_C'
-[2018.08.24-23.45.16:943][  0]LogWorld: Bringing World /Game/Maps/MainMenu.MainMenu up for play (max tick rate 0) at 2018.08.25-11.45.16
-[2018.08.24-23.45.16:943][  0]LogWorld: Bringing up level for play took: 0.000394
-[2018.08.24-23.45.16:944][  0]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
-[2018.08.24-23.45.16:948][  0]LogLoad: Took 0.151367 seconds to LoadMap(/Game/Maps/MainMenu)
-[2018.08.24-23.45.17:243][  0]LogRenderer: Reallocating scene render targets to support 1280x720 Format 10 NumSamples 1 (Frame:1).
-[2018.08.24-23.45.17:243][  0]LogLoad: (Engine Initialization) Total time: 7.12 seconds
-[2018.08.24-23.45.17:243][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2018.08.24-23.45.17:260][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2018.08.24-23.45.17:266][  0]LogContentStreaming: Texture pool size now 3000 MB
-[2018.08.24-23.45.19:284][124]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.08.24-23.45.21:951][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data GAMEMODE 1
-[2018.08.24-23.45.21:951][290]LogOnline: Warning: STEAM: Failed to parse setting from key GAMEMODE value 1
-[2018.08.24-23.45.21:951][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data mode 2
-[2018.08.24-23.45.21:951][290]LogOnline: Warning: STEAM: Failed to parse setting from key mode value 2
-[2018.08.24-23.45.21:952][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data RNG 999024247
-[2018.08.24-23.45.21:952][290]LogOnline: Warning: STEAM: Failed to parse setting from key RNG value 999024247
-[2018.08.24-23.45.21:952][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data ua 51681189935438
-[2018.08.24-23.45.21:952][290]LogOnline: Warning: STEAM: Failed to parse setting from key ua value 51681189935438
-[2018.08.24-23.45.21:952][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data VS 8
-[2018.08.24-23.45.21:953][290]LogOnline: Warning: STEAM: Failed to parse setting from key VS value 8
-[2018.08.24-23.45.21:953][290]LogOnline: Warning: STEAM: Unable to parse search result for lobby 'Lobby [0x186000001825030]'
-[2018.08.24-23.45.21:953][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data mode 1
-[2018.08.24-23.45.21:953][290]LogOnline: Warning: STEAM: Failed to parse setting from key mode value 1
-[2018.08.24-23.45.21:954][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data RNG 1765114314
-[2018.08.24-23.45.21:954][290]LogOnline: Warning: STEAM: Failed to parse setting from key RNG value 1765114314
-[2018.08.24-23.45.21:954][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data ua 51681189935438
-[2018.08.24-23.45.21:954][290]LogOnline: Warning: STEAM: Failed to parse setting from key ua value 51681189935438
-[2018.08.24-23.45.21:955][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data VS 8
-[2018.08.24-23.45.21:955][290]LogOnline: Warning: STEAM: Failed to parse setting from key VS value 8
-[2018.08.24-23.45.21:955][290]LogOnline: Warning: STEAM: Unable to parse search result for lobby 'Lobby [0x186000001827807]'
-[2018.08.24-23.45.21:959][290]LogOnline: Warning: STEAM: Removed incompatible build: ServerBuildUniqueId = 0x2ff5c605, GetBuildUniqueId() = 0x0040486f
-[2018.08.24-23.45.21:959][290]LogOnline: Warning: STEAM: Unable to parse search result for lobby 'Lobby [0x186000001824E1B]'
-[2018.08.24-23.45.21:959][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data GAMEMODE 1
-[2018.08.24-23.45.21:960][290]LogOnline: Warning: STEAM: Failed to parse setting from key GAMEMODE value 1
-[2018.08.24-23.45.21:960][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data mode 2
-[2018.08.24-23.45.21:960][290]LogOnline: Warning: STEAM: Failed to parse setting from key mode value 2
-[2018.08.24-23.45.21:960][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data RNG 2066450696
-[2018.08.24-23.45.21:960][290]LogOnline: Warning: STEAM: Failed to parse setting from key RNG value 2066450696
-[2018.08.24-23.45.21:960][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data ua 442003698025092
-[2018.08.24-23.45.21:960][290]LogOnline: Warning: STEAM: Failed to parse setting from key ua value 442003698025092
-[2018.08.24-23.45.21:961][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data VS 7
-[2018.08.24-23.45.21:961][290]LogOnline: Warning: STEAM: Failed to parse setting from key VS value 7
-[2018.08.24-23.45.21:961][290]LogOnline: Warning: STEAM: Unable to parse search result for lobby 'Lobby [0x1860000018210A1]'
-[2018.08.24-23.45.21:961][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data mode 1
-[2018.08.24-23.45.21:961][290]LogOnline: Warning: STEAM: Failed to parse setting from key mode value 1
-[2018.08.24-23.45.21:961][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data RNG -1727166030
-[2018.08.24-23.45.21:961][290]LogOnline: Warning: STEAM: Failed to parse setting from key RNG value -1727166030
-[2018.08.24-23.45.21:962][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data ua 442003698025092
-[2018.08.24-23.45.21:962][290]LogOnline: Warning: STEAM: Failed to parse setting from key ua value 442003698025092
-[2018.08.24-23.45.21:962][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data VS 7
-[2018.08.24-23.45.21:962][290]LogOnline: Warning: STEAM: Failed to parse setting from key VS value 7
-[2018.08.24-23.45.21:962][290]LogOnline: Warning: STEAM: Unable to parse search result for lobby 'Lobby [0x186000001825D42]'
-[2018.08.24-23.45.21:963][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data auto_stop_game 50
-[2018.08.24-23.45.21:963][290]LogOnline: Warning: STEAM: Failed to parse setting from key auto_stop_game value 50
-[2018.08.24-23.45.21:964][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data browsing_timeout 60
-[2018.08.24-23.45.21:964][290]LogOnline: Warning: STEAM: Failed to parse setting from key browsing_timeout value 60
-[2018.08.24-23.45.21:964][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data confirmed_managers 0
-[2018.08.24-23.45.21:964][290]LogOnline: Warning: STEAM: Failed to parse setting from key confirmed_managers value 0
-[2018.08.24-23.45.21:964][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data database_changes 0
-[2018.08.24-23.45.21:964][290]LogOnline: Warning: STEAM: Failed to parse setting from key database_changes value 0
-[2018.08.24-23.45.21:964][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data disable_subscribing_to_other_humans 50
-[2018.08.24-23.45.21:964][290]LogOnline: Warning: STEAM: Failed to parse setting from key disable_subscribing_to_other_humans value 50
-[2018.08.24-23.45.21:964][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data drafting 0
-[2018.08.24-23.45.21:964][290]LogOnline: Warning: STEAM: Failed to parse setting from key drafting value 0
-[2018.08.24-23.45.21:964][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data draft_squad_budget_value 500000000
-[2018.08.24-23.45.21:964][290]LogOnline: Warning: STEAM: Failed to parse setting from key draft_squad_budget_value value 500000000
-[2018.08.24-23.45.21:964][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data fix_version 3
-[2018.08.24-23.45.21:964][290]LogOnline: Warning: STEAM: Failed to parse setting from key fix_version value 3
-[2018.08.24-23.45.21:964][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data force_continue_enabled 0
-[2018.08.24-23.45.21:964][290]LogOnline: Warning: STEAM: Failed to parse setting from key force_continue_enabled value 0
-[2018.08.24-23.45.21:964][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data game_player_count 46774
-[2018.08.24-23.45.21:964][290]LogOnline: Warning: STEAM: Failed to parse setting from key game_player_count value 46774
-[2018.08.24-23.45.21:964][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data game_type 4
-[2018.08.24-23.45.21:964][290]LogOnline: Warning: STEAM: Failed to parse setting from key game_type value 4
-[2018.08.24-23.45.21:965][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data has_password 0
-[2018.08.24-23.45.21:965][290]LogOnline: Warning: STEAM: Failed to parse setting from key has_password value 0
-[2018.08.24-23.45.21:965][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data highlight_modes 0
-[2018.08.24-23.45.21:965][290]LogOnline: Warning: STEAM: Failed to parse setting from key highlight_modes value 0
-[2018.08.24-23.45.21:965][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data host_user nickle
-[2018.08.24-23.45.21:965][290]LogOnline: Warning: STEAM: Failed to parse setting from key host_user value nickle
-[2018.08.24-23.45.21:965][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data in_game_editor_not_allowed 0
-[2018.08.24-23.45.21:965][290]LogOnline: Warning: STEAM: Failed to parse setting from key in_game_editor_not_allowed value 0
-[2018.08.24-23.45.21:965][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data in_match_timeout 0
-[2018.08.24-23.45.21:965][290]LogOnline: Warning: STEAM: Failed to parse setting from key in_match_timeout value 0
-[2018.08.24-23.45.21:965][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data major_version 18
-[2018.08.24-23.45.21:965][290]LogOnline: Warning: STEAM: Failed to parse setting from key major_version value 18
-[2018.08.24-23.45.21:965][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data max_connections 32
-[2018.08.24-23.45.21:965][290]LogOnline: Warning: STEAM: Failed to parse setting from key max_connections value 32
-[2018.08.24-23.45.21:965][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data max_managers 222
-[2018.08.24-23.45.21:965][290]LogOnline: Warning: STEAM: Failed to parse setting from key max_managers value 222
-[2018.08.24-23.45.21:965][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data message_timeout 0
-[2018.08.24-23.45.21:965][290]LogOnline: Warning: STEAM: Failed to parse setting from key message_timeout value 0
-[2018.08.24-23.45.21:965][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data minor_version 3
-[2018.08.24-23.45.21:965][290]LogOnline: Warning: STEAM: Failed to parse setting from key minor_version value 3
-[2018.08.24-23.45.21:965][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data name Football Manager 2018
-[2018.08.24-23.45.21:965][290]LogOnline: Warning: STEAM: Failed to parse setting from key name value Football Manager 2018
-[2018.08.24-23.45.21:965][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data name_substring_20 1
-[2018.08.24-23.45.21:965][290]LogOnline: Warning: STEAM: Failed to parse setting from key name_substring_20 value 1
-[2018.08.24-23.45.21:965][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data name_substring_201 1
-[2018.08.24-23.45.21:965][290]LogOnline: Warning: STEAM: Failed to parse setting from key name_substring_201 value 1
-[2018.08.24-23.45.21:965][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data name_substring_2018 1
-[2018.08.24-23.45.21:965][290]LogOnline: Warning: STEAM: Failed to parse setting from key name_substring_2018 value 1
-[2018.08.24-23.45.21:965][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data name_substring_Fo 1
-[2018.08.24-23.45.21:965][290]LogOnline: Warning: STEAM: Failed to parse setting from key name_substring_Fo value 1
-[2018.08.24-23.45.21:965][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data name_substring_Foo 1
-[2018.08.24-23.45.21:965][290]LogOnline: Warning: STEAM: Failed to parse setting from key name_substring_Foo value 1
-[2018.08.24-23.45.21:966][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data name_substring_Foot 1
-[2018.08.24-23.45.21:966][290]LogOnline: Warning: STEAM: Failed to parse setting from key name_substring_Foot value 1
-[2018.08.24-23.45.21:966][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data name_substring_Footb 1
-[2018.08.24-23.45.21:966][290]LogOnline: Warning: STEAM: Failed to parse setting from key name_substring_Footb value 1
-[2018.08.24-23.45.21:966][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data name_substring_Footba 1
-[2018.08.24-23.45.21:966][290]LogOnline: Warning: STEAM: Failed to parse setting from key name_substring_Footba value 1
-[2018.08.24-23.45.21:966][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data name_substring_Footbal 1
-[2018.08.24-23.45.21:966][290]LogOnline: Warning: STEAM: Failed to parse setting from key name_substring_Footbal value 1
-[2018.08.24-23.45.21:966][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data name_substring_Football 1
-[2018.08.24-23.45.21:966][290]LogOnline: Warning: STEAM: Failed to parse setting from key name_substring_Football value 1
-[2018.08.24-23.45.21:966][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data name_substring_Ma 1
-[2018.08.24-23.45.21:966][290]LogOnline: Warning: STEAM: Failed to parse setting from key name_substring_Ma value 1
-[2018.08.24-23.45.21:966][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data name_substring_Man 1
-[2018.08.24-23.45.21:966][290]LogOnline: Warning: STEAM: Failed to parse setting from key name_substring_Man value 1
-[2018.08.24-23.45.21:966][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data name_substring_Mana 1
-[2018.08.24-23.45.21:966][290]LogOnline: Warning: STEAM: Failed to parse setting from key name_substring_Mana value 1
-[2018.08.24-23.45.21:966][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data name_substring_Manag 1
-[2018.08.24-23.45.21:966][290]LogOnline: Warning: STEAM: Failed to parse setting from key name_substring_Manag value 1
-[2018.08.24-23.45.21:966][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data name_substring_Manage 1
-[2018.08.24-23.45.21:966][290]LogOnline: Warning: STEAM: Failed to parse setting from key name_substring_Manage value 1
-[2018.08.24-23.45.21:966][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data name_substring_Manager 1
-[2018.08.24-23.45.21:966][290]LogOnline: Warning: STEAM: Failed to parse setting from key name_substring_Manager value 1
-[2018.08.24-23.45.21:966][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data near_end_of_comp 1
-[2018.08.24-23.45.21:966][290]LogOnline: Warning: STEAM: Failed to parse setting from key near_end_of_comp value 1
-[2018.08.24-23.45.21:966][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data network_version 1801
-[2018.08.24-23.45.21:966][290]LogOnline: Warning: STEAM: Failed to parse setting from key network_version value 1801
-[2018.08.24-23.45.21:966][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data new_managers_allowed 1
-[2018.08.24-23.45.21:966][290]LogOnline: Warning: STEAM: Failed to parse setting from key new_managers_allowed value 1
-[2018.08.24-23.45.21:966][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data number_managers 1
-[2018.08.24-23.45.21:966][290]LogOnline: Warning: STEAM: Failed to parse setting from key number_managers value 1
-[2018.08.24-23.45.21:966][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data number_matchdays 0
-[2018.08.24-23.45.21:966][290]LogOnline: Warning: STEAM: Failed to parse setting from key number_matchdays value 0
-[2018.08.24-23.45.21:966][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data number_matchdays_played 0
-[2018.08.24-23.45.21:967][290]LogOnline: Warning: STEAM: Failed to parse setting from key number_matchdays_played value 0
-[2018.08.24-23.45.21:967][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data prematch_timeout 0
-[2018.08.24-23.45.21:967][290]LogOnline: Warning: STEAM: Failed to parse setting from key prematch_timeout value 0
-[2018.08.24-23.45.21:967][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data replay_modes 8
-[2018.08.24-23.45.21:967][290]LogOnline: Warning: STEAM: Failed to parse setting from key replay_modes value 8
-[2018.08.24-23.45.21:967][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data selected_division_1 1
-[2018.08.24-23.45.21:967][290]LogOnline: Warning: STEAM: Failed to parse setting from key selected_division_1 value 1
-[2018.08.24-23.45.21:967][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data selected_division_102421 1
-[2018.08.24-23.45.21:967][290]LogOnline: Warning: STEAM: Failed to parse setting from key selected_division_102421 value 1
-[2018.08.24-23.45.21:967][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data selected_division_102423 1
-[2018.08.24-23.45.21:967][290]LogOnline: Warning: STEAM: Failed to parse setting from key selected_division_102423 value 1
-[2018.08.24-23.45.21:967][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data selected_division_11 1
-[2018.08.24-23.45.21:967][290]LogOnline: Warning: STEAM: Failed to parse setting from key selected_division_11 value 1
-[2018.08.24-23.45.21:967][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data selected_division_12 1
-[2018.08.24-23.45.21:967][290]LogOnline: Warning: STEAM: Failed to parse setting from key selected_division_12 value 1
-[2018.08.24-23.45.21:967][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data selected_division_130486 1
-[2018.08.24-23.45.21:967][290]LogOnline: Warning: STEAM: Failed to parse setting from key selected_division_130486 value 1
-[2018.08.24-23.45.21:967][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data selected_division_16 1
-[2018.08.24-23.45.21:967][290]LogOnline: Warning: STEAM: Failed to parse setting from key selected_division_16 value 1
-[2018.08.24-23.45.21:967][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data selected_division_22 1
-[2018.08.24-23.45.21:967][290]LogOnline: Warning: STEAM: Failed to parse setting from key selected_division_22 value 1
-[2018.08.24-23.45.21:967][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data selected_division_29 1
-[2018.08.24-23.45.21:967][290]LogOnline: Warning: STEAM: Failed to parse setting from key selected_division_29 value 1
-[2018.08.24-23.45.21:967][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data selected_division_32 1
-[2018.08.24-23.45.21:967][290]LogOnline: Warning: STEAM: Failed to parse setting from key selected_division_32 value 1
-[2018.08.24-23.45.21:967][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data selected_division_60 1
-[2018.08.24-23.45.21:967][290]LogOnline: Warning: STEAM: Failed to parse setting from key selected_division_60 value 1
-[2018.08.24-23.45.21:967][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data selected_division_67 1
-[2018.08.24-23.45.21:967][290]LogOnline: Warning: STEAM: Failed to parse setting from key selected_division_67 value 1
-[2018.08.24-23.45.21:967][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data shortlisting 0
-[2018.08.24-23.45.21:967][290]LogOnline: Warning: STEAM: Failed to parse setting from key shortlisting value 0
-[2018.08.24-23.45.21:967][290]LogOnline: Warning: STEAM: Unable to parse search result for lobby 'Lobby [0x186000001827447]'
-[2018.08.24-23.45.21:968][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data GAMEMODE 1
-[2018.08.24-23.45.21:968][290]LogOnline: Warning: STEAM: Failed to parse setting from key GAMEMODE value 1
-[2018.08.24-23.45.21:968][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data mode 2
-[2018.08.24-23.45.21:968][290]LogOnline: Warning: STEAM: Failed to parse setting from key mode value 2
-[2018.08.24-23.45.21:968][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data RNG -1410487694
-[2018.08.24-23.45.21:968][290]LogOnline: Warning: STEAM: Failed to parse setting from key RNG value -1410487694
-[2018.08.24-23.45.21:968][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data ua 13198322686924
-[2018.08.24-23.45.21:968][290]LogOnline: Warning: STEAM: Failed to parse setting from key ua value 13198322686924
-[2018.08.24-23.45.21:968][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data VS 8
-[2018.08.24-23.45.21:968][290]LogOnline: Warning: STEAM: Failed to parse setting from key VS value 8
-[2018.08.24-23.45.21:968][290]LogOnline: Warning: STEAM: Unable to parse search result for lobby 'Lobby [0x18600000182813D]'
-[2018.08.24-23.45.21:968][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data mode 1
-[2018.08.24-23.45.21:968][290]LogOnline: Warning: STEAM: Failed to parse setting from key mode value 1
-[2018.08.24-23.45.21:968][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data RNG 695782222
-[2018.08.24-23.45.21:968][290]LogOnline: Warning: STEAM: Failed to parse setting from key RNG value 695782222
-[2018.08.24-23.45.21:968][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data ua 13198322686924
-[2018.08.24-23.45.21:968][290]LogOnline: Warning: STEAM: Failed to parse setting from key ua value 13198322686924
-[2018.08.24-23.45.21:968][290]LogOnline: Warning: Unknown or unsupported data type from Steam key data VS 8
-[2018.08.24-23.45.21:968][290]LogOnline: Warning: STEAM: Failed to parse setting from key VS value 8
-[2018.08.24-23.45.21:968][290]LogOnline: Warning: STEAM: Unable to parse search result for lobby 'Lobby [0x18600000182813F]'
-[2018.08.24-23.45.21:969][290]LogOnline: Warning: STEAM: Removed incompatible build: ServerBuildUniqueId = 0x00000119, GetBuildUniqueId() = 0x0040486f
-[2018.08.24-23.45.21:969][290]LogOnline: Warning: STEAM: Unable to parse search result for lobby 'Lobby [0x186000001825958]'
-[2018.08.24-23.45.23:792][403]LogNet: Browse: steam.76561198848886266//Game/Maps/MainMenu
-[2018.08.24-23.45.23:792][403]LogTemp: Display: ParseSettings for GameNetDriver
-[2018.08.24-23.45.23:793][403]LogTemp: Display: ParseSettings for SteamNetDriver_0
-[2018.08.24-23.45.23:793][403]LogTemp: Display: ParseSettings for PendingNetDriver
-[2018.08.24-23.45.23:793][403]LogNet: Display: SteamNetDriver_0 bound to port 7777
-[2018.08.24-23.45.23:794][403]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
-[2018.08.24-23.45.23:795][403]LogNet: Game client on port 7777, rate 10000
-[2018.08.24-23.45.28:003][664]LogHandshake: SendChallengeResponse. Timestamp: 24.010319, Cookie: 026001097030003205087113013029057244068125234053000179086175
-[2018.08.24-23.45.28:004][664]LogHandshake: SendChallengeResponse. Timestamp: 24.010319, Cookie: 026001097030003205087113013029057244068125234053000179086175
-[2018.08.24-23.45.28:004][664]LogHandshake: SendChallengeResponse. Timestamp: 24.010319, Cookie: 026001097030003205087113013029057244068125234053000179086175
-[2018.08.24-23.45.28:004][664]LogHandshake: SendChallengeResponse. Timestamp: 24.010319, Cookie: 026001097030003205087113013029057244068125234053000179086175
-[2018.08.24-23.45.28:004][664]LogHandshake: SendChallengeResponse. Timestamp: 24.010319, Cookie: 026001097030003205087113013029057244068125234053000179086175
-[2018.08.24-23.45.28:052][667]LogNetVersion: FPSMultiPlayerBP 1.0.0.0, NetCL: 4212847, EngineNetVer: 5, GameNetVer: 0 (Checksum: 676270042)
-[2018.08.24-23.45.28:052][667]LogNet: UPendingNetGame::SendInitialJoin: Sending hello. [UNetConnection] RemoteAddr: 76561198848886266:7777, Name: SteamNetConnection_0, Driver: PendingNetDriver SteamNetDriver_0, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: INVALID
-[2018.08.24-23.45.28:132][672]LogNet: Welcomed by server (Level: /Game/Maps/Lobby, Game: /Game/Blueprints/Lobby/LobbyGM.LobbyGM_C)
-[2018.08.24-23.45.28:132][672]LogLoad: LoadMap: steam.76561198848886266//Game/Maps/Lobby?game=/Game/Blueprints/Lobby/LobbyGM.LobbyGM_C
-[2018.08.24-23.45.28:307][672]LogAIModule: Creating AISystem for world Lobby
-[2018.08.24-23.45.28:307][672]LogTemp: Display: ParseSettings for GameNetDriver
-[2018.08.24-23.45.28:309][672]LogWorld: Bringing World /Game/Maps/Lobby.Lobby up for play (max tick rate 0) at 2018.08.25-11.45.28
-[2018.08.24-23.45.28:309][672]LogWorld: Bringing up level for play took: 0.000871
-[2018.08.24-23.45.28:309][672]LogLoad: Took 0.177346 seconds to LoadMap(/Game/Maps/Lobby)
-[2018.08.24-23.45.28:373][674]LogNetPackageMap: Warning: GetObjectFromNetGUID: Network checksum mismatch. FullNetGUIDPath: [11]/Game/Blueprints/Lobby/LobbyPC.[9]Default__LobbyPC_C, 1069194220, 2683304358
-[2018.08.24-23.45.28:373][674]LogNetPackageMap: Warning: InternalLoadObject: Unable to resolve object from path. Path: Default__LobbyPC_C, Outer: /Game/Blueprints/Lobby/LobbyPC, NetGUID: 9
-[2018.08.24-23.45.28:373][674]LogNetPackageMap: Warning: InternalLoadObject: Unable to resolve object. FullNetGUIDPath: [11]/Game/Blueprints/Lobby/LobbyPC.[9]Default__LobbyPC_C
-[2018.08.24-23.45.28:373][674]LogNetPackageMap: Error: UPackageMapClient::SerializeNewActor. Unresolved Archetype GUID. Path: Default__LobbyPC_C, NetGUID: 9.
-[2018.08.24-23.45.28:373][674]LogNetPackageMap: Error: UPackageMapClient::SerializeNewActor Unable to read Archetype for NetGUID 2 / 9
-[2018.08.24-23.45.28:373][674]LogNet: Warning: UActorChannel::ProcessBunch: SerializeNewActor failed to find/spawn actor. Actor: None, Channel: 2
-[2018.08.24-23.45.28:374][674]LogNet: Warning: Network Failure: GameNetDriver[NetChecksumMismatch]: GetObjectFromNetGUID: Network checksum mismatch. FullNetGUIDPath: [11]/Game/Blueprints/Lobby/LobbyPC.[9]Default__LobbyPC_C, 1069194220, 2683304358
-[2018.08.24-23.45.28:374][674]LogNet: NetworkFailure: NetChecksumMismatch, Error: 'GetObjectFromNetGUID: Network checksum mismatch. FullNetGUIDPath: [11]/Game/Blueprints/Lobby/LobbyPC.[9]Default__LobbyPC_C, 1069194220, 2683304358'
-[2018.08.24-23.45.28:388][675]LogNet: Browse: /Game/Maps/MainMenu?closed
-[2018.08.24-23.45.28:389][675]LogNet: Connection failed; returning to Entry
-[2018.08.24-23.45.28:389][675]LogLoad: LoadMap: /Game/Maps/MainMenu?closed
-[2018.08.24-23.45.28:389][675]LogNet: World NetDriver shutdown SteamNetDriver_0 [GameNetDriver]
-[2018.08.24-23.45.28:389][675]LogNet: DestroyNamedNetDriver SteamNetDriver_0 [GameNetDriver]
-[2018.08.24-23.45.28:389][675]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 76561198848886266:7777, Name: SteamNetConnection_0, Driver: GameNetDriver SteamNetDriver_0, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: STEAM:ranjurave [0x110000134F8A348], Channels: 3, Time: 2018.08.24-23.45.28
-[2018.08.24-23.45.28:389][675]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 76561198848886266:7777, Name: SteamNetConnection_0, Driver: GameNetDriver SteamNetDriver_0, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: STEAM:ranjurave [0x110000134F8A348]
-[2018.08.24-23.45.28:390][675]LogExit: GameNetDriver SteamNetDriver_0 shut down
-[2018.08.24-23.45.28:410][675]LogNet: UNetConnection::PendingConnectionLost. [UNetConnection] RemoteAddr: 76561198848886266:7777, Name: None, Driver: GameNetDriver None, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: STEAM:ranjurave [0x110000134F8A348] bPendingDestroy=0 
-[2018.08.24-23.45.28:415][675]LogAIModule: Creating AISystem for world MainMenu
-[2018.08.24-23.45.28:520][675]LogLoad: Game class is 'ThirdPersonGameMode_C'
-[2018.08.24-23.45.28:521][675]LogWorld: Bringing World /Game/Maps/MainMenu.MainMenu up for play (max tick rate 0) at 2018.08.25-11.45.28
-[2018.08.24-23.45.28:521][675]LogWorld: Bringing up level for play took: 0.000288
-[2018.08.24-23.45.28:521][675]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
-[2018.08.24-23.45.28:523][675]LogLoad: Took 0.133666 seconds to LoadMap(/Game/Maps/MainMenu)
-[2018.08.24-23.45.31:752][875]Closing by request
-[2018.08.24-23.45.31:752][875]LogWindows: FPlatformMisc::RequestExit(0)
-[2018.08.24-23.45.32:394][876]LogSlate: Window 'FPSMultiPlayerBP (64-bit Development PCD3D_SM5) ' being destroyed
-[2018.08.24-23.45.32:394][876]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2018.08.24-23.45.32:398][876]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2018.08.24-23.45.32:398][876]LogExit: Preparing to exit.
-[2018.08.24-23.45.32:398][876]LogMoviePlayer: Shutting down movie player
-[2018.08.24-23.45.32:997][876]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.08.24-23.45.33:003][876]LogExit: Game engine shut down
-[2018.08.24-23.45.33:140][876]LogExit: Object subsystem successfully closed.
-[2018.08.24-23.45.33:154][876]LogShaderCompilers: Display: Shaders left to compile 0
-[2018.08.24-23.45.33:156][876]LogD3D11RHI: Shutdown
-[2018.08.24-23.45.33:156][876]LogD3D11RHI: CleanupD3DDevice
-[2018.08.24-23.45.33:157][876]LogD3D11RHI: ~FD3D11DynamicRHI
-[2018.08.24-23.45.33:176][876]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (376)
-[2018.08.24-23.45.33:176][876]LogModuleManager: Shutting down and abandoning module SequenceRecorder (374)
-[2018.08.24-23.45.33:176][876]LogModuleManager: Shutting down and abandoning module AutomationController (372)
-[2018.08.24-23.45.33:176][876]LogModuleManager: Shutting down and abandoning module AutomationWorker (370)
-[2018.08.24-23.45.33:176][876]LogModuleManager: Shutting down and abandoning module AIModule (368)
-[2018.08.24-23.45.33:176][876]LogModuleManager: Shutting down and abandoning module GameplayDebugger (367)
-[2018.08.24-23.45.33:176][876]LogModuleManager: Shutting down and abandoning module AITestSuite (365)
-[2018.08.24-23.45.33:176][876]LogModuleManager: Shutting down and abandoning module NavigationSystem (363)
-[2018.08.24-23.45.33:176][876]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (360)
-[2018.08.24-23.45.33:176][876]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (358)
-[2018.08.24-23.45.33:176][876]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (356)
-[2018.08.24-23.45.33:176][876]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (354)
-[2018.08.24-23.45.33:176][876]LogModuleManager: Shutting down and abandoning module MagicLeapCameraPreviewFactory (352)
-[2018.08.24-23.45.33:176][876]LogModuleManager: Shutting down and abandoning module MagicLeapMediaFactory (350)
-[2018.08.24-23.45.33:176][876]LogModuleManager: Shutting down and abandoning module CharacterAI (348)
-[2018.08.24-23.45.33:176][876]LogModuleManager: Shutting down and abandoning module SessionServices (346)
-[2018.08.24-23.45.33:176][876]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (344)
-[2018.08.24-23.45.33:176][876]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (342)
-[2018.08.24-23.45.33:176][876]LogModuleManager: Shutting down and abandoning module MovieScene (340)
-[2018.08.24-23.45.33:176][876]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (338)
-[2018.08.24-23.45.33:176][876]LogModuleManager: Shutting down and abandoning module PortalServices (336)
-[2018.08.24-23.45.33:176][876]LogModuleManager: Shutting down and abandoning module PortalRpc (334)
-[2018.08.24-23.45.33:176][876]LogModuleManager: Shutting down and abandoning module MessagingRpc (332)
-[2018.08.24-23.45.33:176][876]LogModuleManager: Shutting down and abandoning module ProfilerService (330)
-[2018.08.24-23.45.33:353][876]LogModuleManager: Shutting down and abandoning module TaskGraph (328)
-[2018.08.24-23.45.33:353][876]LogModuleManager: Shutting down and abandoning module SteamVRController (326)
-[2018.08.24-23.45.33:353][876]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (324)
-[2018.08.24-23.45.33:353][876]LogModuleManager: Shutting down and abandoning module OculusInput (322)
-[2018.08.24-23.45.33:353][876]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (320)
-[2018.08.24-23.45.33:353][876]LogModuleManager: Shutting down and abandoning module EditableMesh (318)
-[2018.08.24-23.45.33:353][876]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (316)
-[2018.08.24-23.45.33:353][876]LogModuleManager: Shutting down and abandoning module CableComponent (314)
-[2018.08.24-23.45.33:353][876]LogModuleManager: Shutting down and abandoning module AudioCapture (312)
-[2018.08.24-23.45.33:353][876]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (310)
-[2018.08.24-23.45.33:353][876]LogModuleManager: Shutting down and abandoning module AndroidPermission (308)
-[2018.08.24-23.45.33:353][876]LogModuleManager: Shutting down and abandoning module NUTUnrealEngine4 (304)
-[2018.08.24-23.45.33:353][876]LogModuleManager: Shutting down and abandoning module NetcodeUnitTest (302)
-[2018.08.24-23.45.33:353][876]LogModuleManager: Shutting down and abandoning module MediaCompositing (300)
-[2018.08.24-23.45.33:353][876]LogModuleManager: Shutting down and abandoning module LinearTimecode (298)
-[2018.08.24-23.45.33:353][876]LogModuleManager: Shutting down and abandoning module ImgMedia (296)
-[2018.08.24-23.45.33:355][876]LogModuleManager: Shutting down and abandoning module HTML5Networking (294)
-[2018.08.24-23.45.33:355][876]LogModuleManager: Shutting down and abandoning module GeometryCacheTracks (292)
-[2018.08.24-23.45.33:355][876]LogModuleManager: Shutting down and abandoning module GeometryCacheSequencer (291)
-[2018.08.24-23.45.33:355][876]LogModuleManager: Shutting down and abandoning module GeometryCache (288)
-[2018.08.24-23.45.33:355][876]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (287)
-[2018.08.24-23.45.33:355][876]LogModuleManager: Shutting down and abandoning module BackChannel (284)
-[2018.08.24-23.45.33:355][876]LogModuleManager: Shutting down and abandoning module AppleVision (282)
-[2018.08.24-23.45.33:355][876]LogModuleManager: Shutting down and abandoning module AppleImageUtils (280)
-[2018.08.24-23.45.33:355][876]LogModuleManager: Shutting down and abandoning module DatasmithContent (278)
-[2018.08.24-23.45.33:355][876]LogModuleManager: Shutting down and abandoning module CryptoKeysOpenSSL (276)
-[2018.08.24-23.45.33:356][876]LogModuleManager: Shutting down and abandoning module CryptoKeys (274)
-[2018.08.24-23.45.33:356][876]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (272)
-[2018.08.24-23.45.33:356][876]LogModuleManager: Shutting down and abandoning module HotReload (271)
-[2018.08.24-23.45.33:356][876]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (270)
-[2018.08.24-23.45.33:356][876]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (266)
-[2018.08.24-23.45.33:356][876]LogModuleManager: Shutting down and abandoning module UObjectPlugin (264)
-[2018.08.24-23.45.33:356][876]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (262)
-[2018.08.24-23.45.33:356][876]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (260)
-[2018.08.24-23.45.33:356][876]LogModuleManager: Shutting down and abandoning module SourceControl (259)
-[2018.08.24-23.45.33:356][876]LogModuleManager: Shutting down and abandoning module CLionSourceCodeAccess (256)
-[2018.08.24-23.45.33:356][876]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (254)
-[2018.08.24-23.45.33:356][876]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (252)
-[2018.08.24-23.45.33:356][876]LogModuleManager: Shutting down and abandoning module PhysXVehicles (250)
-[2018.08.24-23.45.33:356][876]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (248)
-[2018.08.24-23.45.33:356][876]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (246)
-[2018.08.24-23.45.33:356][876]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (244)
-[2018.08.24-23.45.33:356][876]LogModuleManager: Shutting down and abandoning module ActorSequence (242)
-[2018.08.24-23.45.33:356][876]LogModuleManager: Shutting down and abandoning module UdpMessaging (240)
-[2018.08.24-23.45.33:457][876]LogModuleManager: Shutting down and abandoning module TcpMessaging (238)
-[2018.08.24-23.45.33:977][876]LogModuleManager: Shutting down and abandoning module MagicLeapAudio (236)
-[2018.08.24-23.45.33:977][876]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (234)
-[2018.08.24-23.45.33:977][876]LogModuleManager: Shutting down and abandoning module FacialAnimation (232)
-[2018.08.24-23.45.33:977][876]LogModuleManager: Shutting down and abandoning module DataValidation (230)
-[2018.08.24-23.45.33:977][876]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (228)
-[2018.08.24-23.45.33:977][876]LogModuleManager: Shutting down and abandoning module TreeMap (227)
-[2018.08.24-23.45.33:977][876]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (224)
-[2018.08.24-23.45.33:977][876]LogModuleManager: Shutting down and abandoning module AISupportModule (222)
-[2018.08.24-23.45.33:977][876]LogModuleManager: Shutting down and abandoning module Paper2D (220)
-[2018.08.24-23.45.33:977][876]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (218)
-[2018.08.24-23.45.33:977][876]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (216)
-[2018.08.24-23.45.33:977][876]LogModuleManager: Shutting down and abandoning module WmfMedia (214)
-[2018.08.24-23.45.33:978][876]LogModuleManager: Shutting down and abandoning module Media (213)
-[2018.08.24-23.45.33:984][876]LogModuleManager: Shutting down and abandoning module PacketHandler (210)
-[2018.08.24-23.45.33:984][876]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (208)
-[2018.08.24-23.45.33:984][876]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (206)
-[2018.08.24-23.45.33:984][876]LogModuleManager: Shutting down and abandoning module MediaAssets (204)
-[2018.08.24-23.45.33:984][876]LogModuleManager: Shutting down and abandoning module Overlay (202)
-[2018.08.24-23.45.33:984][876]LogModuleManager: Shutting down and abandoning module OverlayEditor (201)
-[2018.08.24-23.45.33:984][876]LogModuleManager: Shutting down and abandoning module VREditor (198)
-[2018.08.24-23.45.33:984][876]LogModuleManager: Shutting down and abandoning module StringTableEditor (196)
-[2018.08.24-23.45.33:984][876]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (194)
-[2018.08.24-23.45.33:984][876]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (192)
-[2018.08.24-23.45.33:984][876]LogModuleManager: Shutting down and abandoning module FunctionalTesting (190)
-[2018.08.24-23.45.33:984][876]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (188)
-[2018.08.24-23.45.33:984][876]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (187)
-[2018.08.24-23.45.33:984][876]LogModuleManager: Shutting down and abandoning module UMG (184)
-[2018.08.24-23.45.33:984][876]LogModuleManager: Shutting down and abandoning module UMGEditor (183)
-[2018.08.24-23.45.33:984][876]LogModuleManager: Shutting down and abandoning module Sequencer (182)
-[2018.08.24-23.45.33:984][876]LogModuleManager: Shutting down and abandoning module MessageLog (179)
-[2018.08.24-23.45.33:984][876]LogModuleManager: Shutting down and abandoning module SlateReflector (174)
-[2018.08.24-23.45.33:984][876]LogModuleManager: Shutting down and abandoning module Slate (172)
-[2018.08.24-23.45.33:984][876]LogModuleManager: Shutting down and abandoning module EditorStyle (170)
-[2018.08.24-23.45.33:985][876]LogModuleManager: Shutting down and abandoning module MRMesh (168)
-[2018.08.24-23.45.33:985][876]LogModuleManager: Shutting down and abandoning module Messaging (166)
-[2018.08.24-23.45.33:985][876]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (164)
-[2018.08.24-23.45.33:985][876]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (162)
-[2018.08.24-23.45.33:985][876]LogModuleManager: Shutting down and abandoning module XAudio2 (160)
-[2018.08.24-23.45.33:985][876]LogModuleManager: Shutting down and abandoning module Networking (158)
-[2018.08.24-23.45.33:985][876]LogModuleManager: Shutting down and abandoning module Core (156)
-[2018.08.24-23.45.33:985][876]LogModuleManager: Shutting down and abandoning module LevelSequence (154)
-[2018.08.24-23.45.33:985][876]LogModuleManager: Shutting down and abandoning module KismetCompiler (152)
-[2018.08.24-23.45.33:985][876]LogModuleManager: Shutting down and abandoning module MeshUtilities (150)
-[2018.08.24-23.45.33:985][876]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (149)
-[2018.08.24-23.45.33:985][876]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (148)
-[2018.08.24-23.45.33:985][876]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (147)
-[2018.08.24-23.45.33:985][876]LogModuleManager: Shutting down and abandoning module ProxyLODMeshReduction (145)
-[2018.08.24-23.45.33:985][876]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (143)
-[2018.08.24-23.45.33:985][876]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (141)
-[2018.08.24-23.45.33:985][876]LogModuleManager: Shutting down and abandoning module MaterialBaking (137)
-[2018.08.24-23.45.33:985][876]LogModuleManager: Shutting down and abandoning module DerivedDataCache (132)
-[2018.08.24-23.45.34:173][876]LogDerivedDataCache: Shutdown
-[2018.08.24-23.45.34:173][876]LogModuleManager: Shutting down and abandoning module XGEController (130)
-[2018.08.24-23.45.34:173][876]LogModuleManager: Shutting down and abandoning module TargetPlatform (128)
-[2018.08.24-23.45.34:173][876]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (127)
-[2018.08.24-23.45.34:173][876]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (125)
-[2018.08.24-23.45.34:173][876]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (123)
-[2018.08.24-23.45.34:173][876]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (121)
-[2018.08.24-23.45.34:173][876]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (119)
-[2018.08.24-23.45.34:173][876]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (117)
-[2018.08.24-23.45.34:173][876]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (115)
-[2018.08.24-23.45.34:173][876]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (113)
-[2018.08.24-23.45.34:173][876]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (111)
-[2018.08.24-23.45.34:173][876]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (109)
-[2018.08.24-23.45.34:173][876]LogModuleManager: Shutting down and abandoning module ImageWrapper (108)
-[2018.08.24-23.45.34:173][876]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (105)
-[2018.08.24-23.45.34:173][876]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (103)
-[2018.08.24-23.45.34:173][876]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (101)
-[2018.08.24-23.45.34:174][876]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (99)
-[2018.08.24-23.45.34:174][876]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (97)
-[2018.08.24-23.45.34:174][876]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (95)
-[2018.08.24-23.45.34:174][876]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (93)
-[2018.08.24-23.45.34:174][876]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (91)
-[2018.08.24-23.45.34:174][876]LogModuleManager: Shutting down and abandoning module InputCore (88)
-[2018.08.24-23.45.34:174][876]LogModuleManager: Shutting down and abandoning module Settings (86)
-[2018.08.24-23.45.34:174][876]LogModuleManager: Shutting down and abandoning module PhysXCooking (84)
-[2018.08.24-23.45.34:174][876]LogModuleManager: Shutting down and abandoning module SteamVR (82)
-[2018.08.24-23.45.34:174][876]LogModuleManager: Shutting down and abandoning module OculusHMD (80)
-[2018.08.24-23.45.34:174][876]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (78)
-[2018.08.24-23.45.34:174][876]LogModuleManager: Shutting down and abandoning module LauncherChunkInstaller (76)
-[2018.08.24-23.45.34:174][876]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (74)
-[2018.08.24-23.45.34:174][876]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (70)
-[2018.08.24-23.45.34:174][876]LogOnline: Display: STEAM: OnlineSubsystemSteam::Shutdown()
-[2018.08.24-23.45.34:231][876]LogOnline: Display: STEAM: OnlineSubsystemSteam::Shutdown()
-[2018.08.24-23.45.34:231][876]LogModuleManager: Shutting down and abandoning module XMPP (65)
-[2018.08.24-23.45.34:231][876]LogModuleManager: Shutting down and abandoning module WebSockets (64)
-[2018.08.24-23.45.34:260][876]LogModuleManager: Shutting down and abandoning module HTTP (61)
-[2018.08.24-23.45.34:288][876]LogModuleManager: Shutting down and abandoning module SSL (60)
-[2018.08.24-23.45.34:289][876]LogModuleManager: Shutting down and abandoning module MagicLeapEmulator (56)
-[2018.08.24-23.45.34:289][876]LogModuleManager: Shutting down and abandoning module MagicLeapPrivileges (54)
-[2018.08.24-23.45.34:289][876]LogModuleManager: Shutting down and abandoning module MagicLeapIdentity (52)
-[2018.08.24-23.45.34:289][876]LogModuleManager: Shutting down and abandoning module MagicLeapHelperVulkan (50)
-[2018.08.24-23.45.34:289][876]LogModuleManager: Shutting down and abandoning module MagicLeapHelperOpenGL (48)
-[2018.08.24-23.45.34:289][876]LogModuleManager: Shutting down and abandoning module MagicLeapSecureStorage (46)
-[2018.08.24-23.45.34:289][876]LogModuleManager: Shutting down and abandoning module MagicLeapGestures (44)
-[2018.08.24-23.45.34:289][876]LogModuleManager: Shutting down and abandoning module MagicLeapEyeTracker (42)
-[2018.08.24-23.45.34:289][876]LogModuleManager: Shutting down and abandoning module MagicLeapController (40)
-[2018.08.24-23.45.34:289][876]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
-[2018.08.24-23.45.34:289][876]LogModuleManager: Shutting down and abandoning module MagicLeap (38)
-[2018.08.24-23.45.34:289][876]LogModuleManager: Shutting down and abandoning module AnimationModifiers (36)
-[2018.08.24-23.45.34:289][876]LogModuleManager: Shutting down and abandoning module PropertyEditor (35)
-[2018.08.24-23.45.34:289][876]LogModuleManager: Shutting down and abandoning module AudioEditor (32)
-[2018.08.24-23.45.34:289][876]LogModuleManager: Shutting down and abandoning module TextureCompressor (30)
-[2018.08.24-23.45.34:289][876]LogModuleManager: Shutting down and abandoning module ShaderCore (28)
-[2018.08.24-23.45.34:289][876]LogModuleManager: Shutting down and abandoning module Landscape (26)
-[2018.08.24-23.45.34:289][876]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
-[2018.08.24-23.45.34:289][876]LogModuleManager: Shutting down and abandoning module OpenGLDrv (22)
-[2018.08.24-23.45.34:289][876]LogModuleManager: Shutting down and abandoning module D3D11RHI (20)
-[2018.08.24-23.45.34:290][876]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
-[2018.08.24-23.45.34:290][876]LogModuleManager: Shutting down and abandoning module Renderer (16)
-[2018.08.24-23.45.34:290][876]LogModuleManager: Shutting down and abandoning module Engine (14)
-[2018.08.24-23.45.34:290][876]LogModuleManager: Shutting down and abandoning module CoreUObject (12)
-[2018.08.24-23.45.34:290][876]LogModuleManager: Shutting down and abandoning module NetworkFile (10)
-[2018.08.24-23.45.34:290][876]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
-[2018.08.24-23.45.34:290][876]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
-[2018.08.24-23.45.34:290][876]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
-[2018.08.24-23.45.34:290][876]LogModuleManager: Shutting down and abandoning module PakFile (2)
-[2018.08.24-23.45.34:294][876]LogExit: Exiting.
-[2018.08.24-23.45.34:305][876]Log file closed, 08/25/18 11:45:34
+[2018.08.27-20.59.27:510][  0]LogInit: Selected Device Profile: [Windows]
+[2018.08.27-20.59.27:511][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2018.08.27-20.59.27:599][  0]LogHAL: Display: Platform has ~ 16 GB [17079529472 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2018.08.27-20.59.27:600][  0]LogInit: Setting Device Profile CVar: [[r.Vulkan.UseRealUBs:1]]
+[2018.08.27-20.59.27:600][  0]LogInit: Going up to parent DeviceProfile []
+[2018.08.27-20.59.27:600][  0]LogInit: Computer: A00696
+[2018.08.27-20.59.27:600][  0]LogInit: User: RanjuRaveendran
+[2018.08.27-20.59.27:600][  0]LogInit: CPU Page size=4096, Cores=4
+[2018.08.27-20.59.27:600][  0]LogInit: High frequency timer resolution =2.531248 MHz
+[2018.08.27-20.59.27:601][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2018.08.27-20.59.27:601][  0]LogMemory: Platform Memory Stats for Windows
+[2018.08.27-20.59.27:601][  0]LogMemory: Process Physical Memory: 101.76 MB used, 101.76 MB peak
+[2018.08.27-20.59.27:601][  0]LogMemory: Process Virtual Memory: 89.57 MB used, 89.57 MB peak
+[2018.08.27-20.59.27:601][  0]LogMemory: Physical Memory: 5803.31 MB used,  10485.00 MB free, 16288.31 MB total
+[2018.08.27-20.59.27:601][  0]LogMemory: Virtual Memory: 542.47 MB used,  10485.00 MB free, 134217728.00 MB total
+[2018.08.27-20.59.27:636][  0]LogInit: Using OS detected language (en-US).
+[2018.08.27-20.59.27:636][  0]LogInit: Using OS detected locale (en-NZ).
+[2018.08.27-20.59.27:637][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2018.08.27-20.59.28:025][  0]LogStreaming: Display: Took  0.390s to InitEngineTextLocalization.
+[2018.08.27-20.59.28:025][  0]LogInit: Setting process to per monitor DPI aware
+[2018.08.27-20.59.28:074][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2018.08.27-20.59.28:074][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2018.08.27-20.59.28:521][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.08.27-20.59.28:521][  0]LogD3D11RHI: D3D11 adapters:
+[2018.08.27-20.59.28:565][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 960M' (Feature Level 11_0)
+[2018.08.27-20.59.28:565][  0]LogD3D11RHI:       4065/0/8144 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2018.08.27-20.59.28:574][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 530' (Feature Level 11_0)
+[2018.08.27-20.59.28:574][  0]LogD3D11RHI:       128/0/8144 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2018.08.27-20.59.28:576][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2018.08.27-20.59.28:576][  0]LogD3D11RHI:       0/0/8144 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2018.08.27-20.59.28:576][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2018.08.27-20.59.28:582][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2018.08.27-20.59.28:582][  0]LogD3D11RHI:     GPU DeviceId: 0x139b (for the marketing name, search the web for "GPU Device Id")
+[2018.08.27-20.59.28:582][  0]LogWindows: EnumDisplayDevices:
+[2018.08.27-20.59.28:582][  0]LogWindows:    0. 'Intel(R) HD Graphics 530' (P:1 D:1)
+[2018.08.27-20.59.28:582][  0]LogWindows:    1. 'Intel(R) HD Graphics 530' (P:0 D:1)
+[2018.08.27-20.59.28:582][  0]LogWindows:    2. 'Intel(R) HD Graphics 530' (P:0 D:0)
+[2018.08.27-20.59.28:582][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2018.08.27-20.59.28:582][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 960M
+[2018.08.27-20.59.28:583][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2018.08.27-20.59.28:583][  0]LogD3D11RHI:      Driver Date: Unknown
+[2018.08.27-20.59.28:583][  0]LogRHI: Texture pool is 2846 MB (70% of 4065 MB)
+[2018.08.27-20.59.28:634][  0]LogD3D11RHI: Async texture creation enabled
+[2018.08.27-20.59.28:651][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2018.08.27-20.59.28:653][  0]LogShaderCompilers: Guid format shader working directory is 31 characters bigger than the processId version (D:/Unreal/FPSMultiPlayerBP/Intermediate/Shaders/WorkingDirectory/9136/).
+[2018.08.27-20.59.28:654][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/ranju.raveendran/AppData/Local/Temp/UnrealShaderWorkingDir/919F84694BF6D59FE50DA8AF0F9EE5BE/'.
+[2018.08.27-20.59.29:000][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2018.08.27-20.59.29:016][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2018.08.27-20.59.29:033][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2018.08.27-20.59.29:052][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2018.08.27-20.59.29:068][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2018.08.27-20.59.29:086][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2018.08.27-20.59.29:101][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2018.08.27-20.59.29:116][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2018.08.27-20.59.29:123][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2018.08.27-20.59.29:212][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.27-20.59.29:212][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.27-20.59.29:212][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.27-20.59.29:212][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.27-20.59.29:212][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.27-20.59.29:212][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.27-20.59.29:212][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.27-20.59.29:212][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.27-20.59.29:212][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.27-20.59.29:212][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.27-20.59.29:212][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.27-20.59.29:212][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.27-20.59.29:212][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.27-20.59.29:212][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.27-20.59.29:212][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.27-20.59.29:212][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.27-20.59.29:212][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.27-20.59.29:212][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.27-20.59.29:214][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2018.08.27-20.59.29:279][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2018.08.27-20.59.29:279][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2018.08.27-20.59.29:307][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2018.08.27-20.59.29:307][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2018.08.27-20.59.29:322][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2018.08.27-20.59.29:337][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2018.08.27-20.59.29:351][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2018.08.27-20.59.29:367][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2018.08.27-20.59.29:377][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
+[2018.08.27-20.59.29:377][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2018.08.27-20.59.29:450][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2018.08.27-20.59.29:450][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2018.08.27-20.59.29:450][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2018.08.27-20.59.30:383][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2018.08.27-20.59.30:435][  0]LogDerivedDataCache: Loaded boot cache 0.05s 71MB C:/Users/ranju.raveendran/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc.
+[2018.08.27-20.59.30:435][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/ranju.raveendran/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc
+[2018.08.27-20.59.30:435][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file D:/Unreal/FPSMultiPlayerBP/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.08.27-20.59.30:435][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2018.08.27-20.59.30:435][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file D:/Unreal/FPSMultiPlayerBP/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2018.08.27-20.59.30:435][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2018.08.27-20.59.30:449][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2018.08.27-20.59.30:462][  0]LogDerivedDataCache: Using Local data cache path C:/Users/ranju.raveendran/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2018.08.27-20.59.30:462][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2018.08.27-20.59.30:462][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2018.08.27-20.59.30:482][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2018.08.27-20.59.30:486][  0]LogSlate: Using FreeType 2.6.0
+[2018.08.27-20.59.30:488][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.08.27-20.59.30:625][  0]LogAssetRegistry: FAssetRegistry took 0.0264 seconds to start up
+[2018.08.27-20.59.30:972][  0]LogInit: Selected Device Profile: [Windows]
+[2018.08.27-20.59.31:132][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2018.08.27-20.59.31:137][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2018.08.27-20.59.31:137][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2018.08.27-20.59.31:137][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2018.08.27-20.59.31:137][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2018.08.27-20.59.31:156][  0]LogNetVersion: FPSMultiPlayerBP 1.0.0, NetCL: 4212847, EngineNetVer: 5, GameNetVer: 0 (Checksum: 3398490363)
+[2018.08.27-20.59.31:716][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 2 prioritized culture(s) in 0.108113 seconds
+[2018.08.27-20.59.31:722][  0]LogUObjectArray: 38434 objects as part of root set at end of initial load.
+[2018.08.27-20.59.31:722][  0]LogUObjectAllocator: 6701144 out of 0 bytes used by permanent object pool.
+[2018.08.27-20.59.31:722][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2018.08.27-20.59.33:218][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2018.08.27-20.59.33:232][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2018.08.27-20.59.33:433][  0]SourceControl: Source control is disabled
+[2018.08.27-20.59.33:433][  0]SourceControl: Source control is disabled
+[2018.08.27-20.59.33:435][  0]SourceControl: Source control is disabled
+[2018.08.27-20.59.33:437][  0]SourceControl: Source control is disabled
+[2018.08.27-20.59.33:651][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2018.08.27-20.59.33:710][  0]LogOcInput: OculusInput pre-init called
+[2018.08.27-20.59.33:783][  0]LogEngine: Initializing Engine...
+[2018.08.27-20.59.33:784][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.08.27-20.59.33:785][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2018.08.27-20.59.33:785][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.08.27-20.59.33:785][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2018.08.27-20.59.33:785][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.08.27-20.59.34:026][  0]LogInit: Initializing FReadOnlyCVARCache
+[2018.08.27-20.59.34:043][  0]LogAIModule: Creating AISystem for world Untitled
+[2018.08.27-20.59.34:051][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.08.27-20.59.34:149][  0]LogInit: FAudioDevice initialized.
+[2018.08.27-20.59.34:150][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2018.08.27-20.59.34:236][  0]LogDerivedDataCache: Saved boot cache 0.09s 71MB C:/Users/ranju.raveendran/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc.
+[2018.08.27-20.59.34:240][  0]LogInit: Texture streaming: Enabled
+[2018.08.27-20.59.34:263][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2018.08.27-20.59.34:278][  0]LogInit: Transaction tracking system initialized
+[2018.08.27-20.59.34:310][  0]BlueprintLog: New page: Editor Load
+[2018.08.27-20.59.34:409][  0]LocalizationService: Localization service is disabled
+[2018.08.27-20.59.34:791][  0]LogLinker: Warning: Can't find file '/Game/PuzzleBP/PuzzleOverview'
+[2018.08.27-20.59.34:791][  0]LogLinker: Warning: Can't find file '/Game/PuzzleBP/PuzzleOverview'
+[2018.08.27-20.59.34:791][  0]LogUObjectGlobals: Warning: Failed to find object 'Class /Game/PuzzleBP/PuzzleOverview.PuzzleOverview_C'
+[2018.08.27-20.59.34:791][  0]LogLinker: Warning: Can't find file '/Game/PuzzleBP/Tutorial/Part2b-BlockBLueprintComponents'
+[2018.08.27-20.59.34:791][  0]LogLinker: Warning: Can't find file '/Game/PuzzleBP/Tutorial/Part2b-BlockBLueprintComponents'
+[2018.08.27-20.59.34:791][  0]LogUObjectGlobals: Warning: Failed to find object 'Class /Game/PuzzleBP/Tutorial/Part2b-BlockBLueprintComponents.Part2b-BlockBLueprintComponents_C'
+[2018.08.27-20.59.34:792][  0]LogLinker: Warning: Can't find file '/Game/PuzzleBP/Tutorial/Part3-GridBlueprint'
+[2018.08.27-20.59.34:792][  0]LogLinker: Warning: Can't find file '/Game/PuzzleBP/Tutorial/Part3-GridBlueprint'
+[2018.08.27-20.59.34:792][  0]LogUObjectGlobals: Warning: Failed to find object 'Class /Game/PuzzleBP/Tutorial/Part3-GridBlueprint.Part3-GridBlueprint_C'
+[2018.08.27-20.59.34:792][  0]LogLinker: Warning: Can't find file '/Game/PuzzleBP/Tutorial/Part4-GridBluepint2'
+[2018.08.27-20.59.34:792][  0]LogLinker: Warning: Can't find file '/Game/PuzzleBP/Tutorial/Part4-GridBluepint2'
+[2018.08.27-20.59.34:792][  0]LogUObjectGlobals: Warning: Failed to find object 'Class /Game/PuzzleBP/Tutorial/Part4-GridBluepint2.Part4-GridBluepint2_C'
+[2018.08.27-20.59.34:792][  0]LogLinker: Warning: Can't find file '/Game/PuzzleBP/Tutorial/Part5-GameMode'
+[2018.08.27-20.59.34:792][  0]LogLinker: Warning: Can't find file '/Game/PuzzleBP/Tutorial/Part5-GameMode'
+[2018.08.27-20.59.34:792][  0]LogUObjectGlobals: Warning: Failed to find object 'Class /Game/PuzzleBP/Tutorial/Part5-GameMode.Part5-GameMode_C'
+[2018.08.27-20.59.34:792][  0]LogLinker: Warning: Can't find file '/Game/PuzzleBP/Tutorial/Part6-Controller'
+[2018.08.27-20.59.34:792][  0]LogLinker: Warning: Can't find file '/Game/PuzzleBP/Tutorial/Part6-Controller'
+[2018.08.27-20.59.34:792][  0]LogUObjectGlobals: Warning: Failed to find object 'Class /Game/PuzzleBP/Tutorial/Part6-Controller.Part6-Controller_C'
+[2018.08.27-20.59.34:792][  0]LogLinker: Warning: Can't find file '/Game/PuzzleBP/Tutorial/Part7-LevelBlueprint'
+[2018.08.27-20.59.34:793][  0]LogLinker: Warning: Can't find file '/Game/PuzzleBP/Tutorial/Part7-LevelBlueprint'
+[2018.08.27-20.59.34:793][  0]LogUObjectGlobals: Warning: Failed to find object 'Class /Game/PuzzleBP/Tutorial/Part7-LevelBlueprint.Part7-LevelBlueprint_C'
+[2018.08.27-20.59.34:793][  0]LogLinker: Warning: Can't find file '/Game/PuzzleBP/Tutorial/Part8-EverythingElse'
+[2018.08.27-20.59.34:793][  0]LogLinker: Warning: Can't find file '/Game/PuzzleBP/Tutorial/Part8-EverythingElse'
+[2018.08.27-20.59.34:793][  0]LogUObjectGlobals: Warning: Failed to find object 'Class /Game/PuzzleBP/Tutorial/Part8-EverythingElse.Part8-EverythingElse_C'
+[2018.08.27-20.59.35:139][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2018.08.27-20.59.35:140][  0]LogCook: Display: Mobile HDR setting 1
+[2018.08.27-20.59.35:140][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2018.08.27-20.59.35:140][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2018.08.27-20.59.35:140][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.08.27-20.59.35:140][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2018.08.27-20.59.35:140][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.08.27-20.59.35:158][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal/FPSMultiPlayerBP/Content/' took 0.01s
+[2018.08.27-20.59.35:285][  0]SourceControl: Source control is disabled
+[2018.08.27-20.59.35:286][  0]Cmd: MAP LOAD FILE="D:/Unreal/FPSMultiPlayerBP/Content/Maps/MainMenu.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.08.27-20.59.35:286][  0]LightingResults: New page: Lighting Build
+[2018.08.27-20.59.35:290][  0]MapCheck: New page: Map Check
+[2018.08.27-20.59.35:290][  0]LightingResults: New page: Lighting Build
+[2018.08.27-20.59.36:163][  0]LogAIModule: Creating AISystem for world MainMenu
+[2018.08.27-20.59.36:164][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.08.27-20.59.36:190][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.08.27-20.59.36:347][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 156.6ms to complete.
+[2018.08.27-20.59.36:347][  0]LogFileHelpers: Loading map 'MainMenu' took 1.061
+[2018.08.27-20.59.36:505][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2018.08.27-20.59.36:585][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.08.27-20.59.36:593][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.08.27-20.59.36:601][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.08.27-20.59.36:610][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.08.27-20.59.36:618][  0]LogCollectionManager: Loaded 0 collections in 0.001619 seconds
+[2018.08.27-20.59.36:661][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal/FPSMultiPlayerBP/Saved/Collections/' took 0.01s
+[2018.08.27-20.59.36:661][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal/FPSMultiPlayerBP/Content/Developers/RanjuRaveendran/Collections/' took 0.01s
+[2018.08.27-20.59.36:661][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal/FPSMultiPlayerBP/Content/Collections/' took 0.01s
+[2018.08.27-20.59.36:661][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2018.08.27-20.59.36:671][  0]LogContentBrowser: Native class hierarchy populated in 0.0092 seconds. Added 2575 classes and 607 folders.
+[2018.08.27-20.59.36:678][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2018.08.27-20.59.36:744][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2018.08.27-20.59.36:750][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2018.08.27-20.59.36:893][  0]LogSlate: Took 0.001507 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.08.27-20.59.36:895][  0]LogSlate: Took 0.000244 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2018.08.27-20.59.36:902][  0]LogSlate: Took 0.001015 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2018.08.27-20.59.36:991][  0]LogRenderer: Reallocating scene render targets to support 1224x536 Format 10 NumSamples 1 (Frame:1).
+[2018.08.27-20.59.37:140][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2018.08.27-20.59.37:140][  0]LogLoad: (Engine Initialization) Total time: 11.78 seconds
+[2018.08.27-20.59.37:140][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2018.08.27-20.59.37:178][  0]LogContentStreaming: Texture pool size now 3000 MB
+[2018.08.27-20.59.37:574][  2]LogAssetRegistry: Asset discovery search completed in 6.9703 seconds
+[2018.08.27-20.59.37:576][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2018.08.27-20.59.37:576][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000064 seconds (updated 0 objects)
+[2018.08.27-20.59.41:242][217]LogSlate: Took 0.000913 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2018.08.27-21.00.08:927][866]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.08.27-21.00.15:009][189]LogSlate: Took 0.000254 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2018.08.27-21.00.15:040][189]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/Blueprints/Lobby/LobbyGM.LobbyGM
+[2018.08.27-21.00.15:608][189]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0007 seconds. Added 116 classes and 0 folders.
+[2018.08.27-21.00.16:554][189]LogSlate: Took 0.001506 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2018.08.27-21.00.16:616][190]LogSlate: Took 0.002757 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2018.08.27-21.00.47:706][ 45]LogRenderer: Reallocating scene render targets to support 1224x712 Format 10 NumSamples 1 (Frame:1).
+[2018.08.27-21.01.24:627][253]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/Blueprints/Lobby/LobbyPC.LobbyPC
+[2018.08.27-21.02.10:119][898]LogSlate: Took 0.002328 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensedItalic.ttf' (160K)
+[2018.08.27-21.02.42:909][859]BlueprintLog: New page: Compile LobbyPC
+[2018.08.27-21.02.43:549][875]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyPC" FILE="D:/Unreal/FPSMultiPlayerBP/Content/Blueprints/Lobby/LobbyPC.uasset" SILENT=true
+[2018.08.27-21.02.43:807][875]LogSavePackage: Moving 'D:/Unreal/FPSMultiPlayerBP/Saved/LobbyPC40A9A95C4F65D843653E55896AA750F0.tmp' to 'D:/Unreal/FPSMultiPlayerBP/Content/Blueprints/Lobby/LobbyPC.uasset'
+[2018.08.27-21.09.37:448][441]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/MainMenu' took 0.032
+[2018.08.27-21.09.37:450][441]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Lobby/LobbyGM] ([1] browsable assets)...
+[2018.08.27-21.09.37:450][441]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Lobby/LobbyGM]
+[2018.08.27-21.09.37:450][441]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="D:/Unreal/FPSMultiPlayerBP/Saved/Autosaves/Game/Blueprints/Lobby/LobbyGM_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2018.08.27-21.09.37:470][441]LogSavePackage: Moving 'D:/Unreal/FPSMultiPlayerBP/Saved/LobbyGM_Auto1EAA41F584C99B11C756B2D8D5681F6C7.tmp' to 'D:/Unreal/FPSMultiPlayerBP/Saved/Autosaves/Game/Blueprints/Lobby/LobbyGM_Auto1.uasset'
+[2018.08.27-21.09.37:471][441]LogFileHelpers: Auto-saving content packages took 0.022
+[2018.08.27-21.15.59:017][325]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="D:/Unreal/FPSMultiPlayerBP/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
+[2018.08.27-21.15.59:037][325]LogSavePackage: Moving 'D:/Unreal/FPSMultiPlayerBP/Saved/LobbyGM32112A904913FEDF1DC5539812674BF9.tmp' to 'D:/Unreal/FPSMultiPlayerBP/Content/Blueprints/Lobby/LobbyGM.uasset'
+[2018.08.27-22.47.02:280][963]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/MainMenu' took 0.035
+[2018.08.27-22.47.02:282][963]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Lobby/LobbyGM] ([1] browsable assets)...
+[2018.08.27-22.47.02:282][963]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Lobby/LobbyGM]
+[2018.08.27-22.47.02:282][963]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="D:/Unreal/FPSMultiPlayerBP/Saved/Autosaves/Game/Blueprints/Lobby/LobbyGM_Auto2.uasset" SILENT=false AUTOSAVING=true
+[2018.08.27-22.47.02:305][963]LogSavePackage: Moving 'D:/Unreal/FPSMultiPlayerBP/Saved/LobbyGM_Auto2FFF114724DBE970432699DBA23EB2410.tmp' to 'D:/Unreal/FPSMultiPlayerBP/Saved/Autosaves/Game/Blueprints/Lobby/LobbyGM_Auto2.uasset'
+[2018.08.27-22.47.02:305][963]LogFileHelpers: Auto-saving content packages took 0.024
+[2018.08.27-22.47.04:015][ 64]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/Blueprints/Lobby/LobbyPC.LobbyPC
+[2018.08.27-22.47.41:131][253]BlueprintLog: New page: Compile LobbyPC
+[2018.08.27-22.47.41:833][274]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyPC" FILE="D:/Unreal/FPSMultiPlayerBP/Content/Blueprints/Lobby/LobbyPC.uasset" SILENT=true
+[2018.08.27-22.47.41:883][274]LogSavePackage: Moving 'D:/Unreal/FPSMultiPlayerBP/Saved/LobbyPC1CCDB7EF41EFD9645CF6AB9F01B6148A.tmp' to 'D:/Unreal/FPSMultiPlayerBP/Content/Blueprints/Lobby/LobbyPC.uasset'
+[2018.08.27-22.48.39:720][718]BlueprintLog: New page: Compile LobbyPC
+[2018.08.27-22.50.25:152][958]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="D:/Unreal/FPSMultiPlayerBP/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
+[2018.08.27-22.50.25:176][958]LogSavePackage: Moving 'D:/Unreal/FPSMultiPlayerBP/Saved/LobbyGM6D512F1844CED802BD1FD6BB2902FED5.tmp' to 'D:/Unreal/FPSMultiPlayerBP/Content/Blueprints/Lobby/LobbyGM.uasset'
+[2018.08.27-22.52.27:961][266]BlueprintLog: New page: Compile LobbyGM
+[2018.08.27-22.52.44:301][204]BlueprintLog: New page: Compile LobbyGM
+[2018.08.27-22.52.44:871][222]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="D:/Unreal/FPSMultiPlayerBP/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
+[2018.08.27-22.52.44:899][222]LogSavePackage: Moving 'D:/Unreal/FPSMultiPlayerBP/Saved/LobbyGMEB95EA7E4BEF6D51614F129D5AAB882F.tmp' to 'D:/Unreal/FPSMultiPlayerBP/Content/Blueprints/Lobby/LobbyGM.uasset'
+[2018.08.27-22.56.38:937][173]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2018.08.27-23.01.08:102][ 23]BlueprintLog: New page: Compile LobbyGM
+[2018.08.27-23.01.08:619][ 36]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="D:/Unreal/FPSMultiPlayerBP/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
+[2018.08.27-23.01.08:658][ 36]LogSavePackage: Moving 'D:/Unreal/FPSMultiPlayerBP/Saved/LobbyGM85512F1041253AC554AC68A43F5CE072.tmp' to 'D:/Unreal/FPSMultiPlayerBP/Content/Blueprints/Lobby/LobbyGM.uasset'
+[2018.08.27-23.03.25:739][ 78]LogClass: Warning: Type mismatch in ConnectedPlayers of SKEL_LobbyGM_C - Previous (StructProperty) Current(ArrayProperty) for package:  FObjectReader
+[2018.08.27-23.06.24:835][504]BlueprintLog: New page: Compile LobbyGM
+[2018.08.27-23.06.25:387][519]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="D:/Unreal/FPSMultiPlayerBP/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
+[2018.08.27-23.06.25:431][519]LogSavePackage: Moving 'D:/Unreal/FPSMultiPlayerBP/Saved/LobbyGM1ED24F7A4A3B8868E0F04DBD15465AA4.tmp' to 'D:/Unreal/FPSMultiPlayerBP/Content/Blueprints/Lobby/LobbyGM.uasset'
+[2018.08.27-23.06.47:659][831]BlueprintLog: New page: Compile LobbyPC
+[2018.08.27-23.06.48:104][833]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyPC" FILE="D:/Unreal/FPSMultiPlayerBP/Content/Blueprints/Lobby/LobbyPC.uasset" SILENT=true
+[2018.08.27-23.06.48:154][833]LogSavePackage: Moving 'D:/Unreal/FPSMultiPlayerBP/Saved/LobbyPCF236BB664FFC65BB5701E6846C750288.tmp' to 'D:/Unreal/FPSMultiPlayerBP/Content/Blueprints/Lobby/LobbyPC.uasset'
+[2018.08.27-23.06.54:497][203]BlueprintLog: New page: Compile LobbyGM
+[2018.08.27-23.06.55:221][228]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="D:/Unreal/FPSMultiPlayerBP/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
+[2018.08.27-23.06.55:269][228]LogSavePackage: Moving 'D:/Unreal/FPSMultiPlayerBP/Saved/LobbyGM611BF8D348B3F5F1EA1484985F778C84.tmp' to 'D:/Unreal/FPSMultiPlayerBP/Content/Blueprints/Lobby/LobbyGM.uasset'
+[2018.08.27-23.08.40:552][407]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/MainMenu' took 0.048
+[2018.08.27-23.08.40:554][407]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Lobby/LobbyGM] ([1] browsable assets)...
+[2018.08.27-23.08.40:554][407]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Lobby/LobbyGM]
+[2018.08.27-23.08.40:554][407]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="D:/Unreal/FPSMultiPlayerBP/Saved/Autosaves/Game/Blueprints/Lobby/LobbyGM_Auto3.uasset" SILENT=false AUTOSAVING=true
+[2018.08.27-23.08.40:604][407]LogSavePackage: Moving 'D:/Unreal/FPSMultiPlayerBP/Saved/LobbyGM_Auto3163D5AE041ECB78720BD36B097330BF7.tmp' to 'D:/Unreal/FPSMultiPlayerBP/Saved/Autosaves/Game/Blueprints/Lobby/LobbyGM_Auto3.uasset'
+[2018.08.27-23.08.40:605][407]LogFileHelpers: Auto-saving content packages took 0.051
+[2018.08.27-23.08.47:196][801]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/Blueprints/Lobby/LobbyPC.LobbyPC
+[2018.08.27-23.08.59:219][491]BlueprintLog: New page: Compile LobbyPC
+[2018.08.27-23.08.59:331][491]LogBlueprint: Error: [Compiler LobbyGM] The current value of the ' Connected Player Info ' pin is invalid: Array inputs (like 'Connected Player Info') must have an input wired into them (try connecting a MakeArray node).
+[2018.08.27-23.08.59:336][491]LogBlueprint: Warning: [Compiler LobbyGM] [7774.06] Compile of LobbyGM failed. 1 Fatal Issue(s) 0 Warning(s) [in 103 ms] (/Game/Blueprints/Lobby/LobbyGM.LobbyGM)
+[2018.08.27-23.09.04:336][773]BlueprintLog: New page: Compile LobbyPC
+[2018.08.27-23.09.04:464][773]LogBlueprint: Error: [Compiler LobbyGM] The current value of the ' Connected Player Info ' pin is invalid: Array inputs (like 'Connected Player Info') must have an input wired into them (try connecting a MakeArray node).
+[2018.08.27-23.09.04:474][773]LogBlueprint: Warning: [Compiler LobbyGM] [7779.20] Compile of LobbyGM failed. 1 Fatal Issue(s) 0 Warning(s) [in 124 ms] (/Game/Blueprints/Lobby/LobbyGM.LobbyGM)
+[2018.08.27-23.09.04:774][776]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyPC" FILE="D:/Unreal/FPSMultiPlayerBP/Content/Blueprints/Lobby/LobbyPC.uasset" SILENT=true
+[2018.08.27-23.09.04:818][776]LogSavePackage: Moving 'D:/Unreal/FPSMultiPlayerBP/Saved/LobbyPC4A2DDAAA4098E7229A4ABBB250C1D4D4.tmp' to 'D:/Unreal/FPSMultiPlayerBP/Content/Blueprints/Lobby/LobbyPC.uasset'
+[2018.08.27-23.09.19:855][664]BlueprintLog: New page: Compile LobbyGM
+[2018.08.27-23.10.14:082][838]BlueprintLog: New page: Compile LobbyGM
+[2018.08.27-23.10.37:462][214]BlueprintLog: New page: Compile LobbyGM
+[2018.08.27-23.11.30:639][276]BlueprintLog: New page: Compile LobbyGM
+[2018.08.27-23.12.33:338][951]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2018.08.27-23.14.00:544][ 78]BlueprintLog: New page: Compile LobbyGM
+[2018.08.27-23.14.01:419][111]LogTemp: Repeating last play command: Standalone Game
+[2018.08.27-23.14.03:560][111]LogSlate: Window 'Save Content' being destroyed
+[2018.08.27-23.14.03:591][111]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="D:/Unreal/FPSMultiPlayerBP/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
+[2018.08.27-23.14.03:654][111]LogSavePackage: Moving 'D:/Unreal/FPSMultiPlayerBP/Saved/LobbyGM43CC0DF04CAD04A1F68C45884E747BF1.tmp' to 'D:/Unreal/FPSMultiPlayerBP/Content/Blueprints/Lobby/LobbyGM.uasset'
+[2018.08.27-23.14.41:882][332]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="D:/Unreal/FPSMultiPlayerBP/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
+[2018.08.27-23.14.41:944][332]LogSavePackage: Moving 'D:/Unreal/FPSMultiPlayerBP/Saved/LobbyGM9DF891DC4384B3D8A94F369301283968.tmp' to 'D:/Unreal/FPSMultiPlayerBP/Content/Blueprints/Lobby/LobbyGM.uasset'
+[2018.08.27-23.21.30:142][473]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/MainMenu' took 0.043
+[2018.08.27-23.21.30:144][473]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Lobby/LobbyGM] ([1] browsable assets)...
+[2018.08.27-23.21.30:145][473]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Lobby/LobbyGM]
+[2018.08.27-23.21.30:145][473]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="D:/Unreal/FPSMultiPlayerBP/Saved/Autosaves/Game/Blueprints/Lobby/LobbyGM_Auto4.uasset" SILENT=false AUTOSAVING=true
+[2018.08.27-23.21.30:216][473]LogSavePackage: Moving 'D:/Unreal/FPSMultiPlayerBP/Saved/LobbyGM_Auto4C9D44C134D58F6DF69EADAB4557F197D.tmp' to 'D:/Unreal/FPSMultiPlayerBP/Saved/Autosaves/Game/Blueprints/Lobby/LobbyGM_Auto4.uasset'
+[2018.08.27-23.21.30:217][473]LogFileHelpers: Auto-saving content packages took 0.074
+[2018.08.27-23.31.30:514][436]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/MainMenu' took 0.071
+[2018.08.27-23.31.30:516][436]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Lobby/LobbyGM] ([1] browsable assets)...
+[2018.08.27-23.31.30:516][436]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Lobby/LobbyGM]
+[2018.08.27-23.31.30:516][436]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="D:/Unreal/FPSMultiPlayerBP/Saved/Autosaves/Game/Blueprints/Lobby/LobbyGM_Auto5.uasset" SILENT=false AUTOSAVING=true
+[2018.08.27-23.31.30:581][436]LogSavePackage: Moving 'D:/Unreal/FPSMultiPlayerBP/Saved/LobbyGM_Auto5716A7E0343066A6CCB8DC6A968D73B1F.tmp' to 'D:/Unreal/FPSMultiPlayerBP/Saved/Autosaves/Game/Blueprints/Lobby/LobbyGM_Auto5.uasset'
+[2018.08.27-23.31.30:582][436]LogFileHelpers: Auto-saving content packages took 0.067
+[2018.08.27-23.41.30:834][297]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/MainMenu' took 0.037
+[2018.08.27-23.41.30:836][297]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Lobby/LobbyGM] ([1] browsable assets)...
+[2018.08.27-23.41.30:836][297]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Lobby/LobbyGM]
+[2018.08.27-23.41.30:836][297]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="D:/Unreal/FPSMultiPlayerBP/Saved/Autosaves/Game/Blueprints/Lobby/LobbyGM_Auto6.uasset" SILENT=false AUTOSAVING=true
+[2018.08.27-23.41.30:902][297]LogSavePackage: Moving 'D:/Unreal/FPSMultiPlayerBP/Saved/LobbyGM_Auto6D2CDD2974BE4D26C5AD79EAF8E873824.tmp' to 'D:/Unreal/FPSMultiPlayerBP/Saved/Autosaves/Game/Blueprints/Lobby/LobbyGM_Auto6.uasset'
+[2018.08.27-23.41.30:903][297]LogFileHelpers: Auto-saving content packages took 0.068
+[2018.08.28-00.02.54:152][249]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/MainMenu' took 0.047
+[2018.08.28-00.02.54:154][249]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Lobby/LobbyGM] ([1] browsable assets)...
+[2018.08.28-00.02.54:154][249]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Lobby/LobbyGM]
+[2018.08.28-00.02.54:154][249]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="D:/Unreal/FPSMultiPlayerBP/Saved/Autosaves/Game/Blueprints/Lobby/LobbyGM_Auto7.uasset" SILENT=false AUTOSAVING=true
+[2018.08.28-00.02.54:229][249]LogSavePackage: Moving 'D:/Unreal/FPSMultiPlayerBP/Saved/LobbyGM_Auto79D0822DD48BE08A71AEF49966A0BB855.tmp' to 'D:/Unreal/FPSMultiPlayerBP/Saved/Autosaves/Game/Blueprints/Lobby/LobbyGM_Auto7.uasset'
+[2018.08.28-00.02.54:230][249]LogFileHelpers: Auto-saving content packages took 0.077
+[2018.08.28-00.03.58:856][ 55]BlueprintLog: New page: Compile LobbyGM
+[2018.08.28-00.03.59:508][ 69]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="D:/Unreal/FPSMultiPlayerBP/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
+[2018.08.28-00.03.59:580][ 69]LogSavePackage: Moving 'D:/Unreal/FPSMultiPlayerBP/Saved/LobbyGM518D37A44A2ED1BA57A831AC261CB8DA.tmp' to 'D:/Unreal/FPSMultiPlayerBP/Content/Blueprints/Lobby/LobbyGM.uasset'
+[2018.08.28-00.06.11:149][859]BlueprintLog: New page: Compile LobbyGM
+[2018.08.28-00.06.11:909][881]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="D:/Unreal/FPSMultiPlayerBP/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
+[2018.08.28-00.06.11:980][881]LogSavePackage: Moving 'D:/Unreal/FPSMultiPlayerBP/Saved/LobbyGM324C2BD2426F628DE9AA0AAAC7F1BF3B.tmp' to 'D:/Unreal/FPSMultiPlayerBP/Content/Blueprints/Lobby/LobbyGM.uasset'
+[2018.08.28-00.06.39:554][525]LogTemp: Repeating last play command: Standalone Game
+[2018.08.28-00.28.08:048][561]LogTemp: Repeating last play command: Standalone Game
+[2018.08.28-00.28.09:526][561]LogSlate: Window 'Save Content' being destroyed
+[2018.08.28-00.28.09:552][561]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="D:/Unreal/FPSMultiPlayerBP/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
+[2018.08.28-00.28.09:622][561]LogSavePackage: Moving 'D:/Unreal/FPSMultiPlayerBP/Saved/LobbyGM3B6419BF4BE5FD4E92640081C6A880AB.tmp' to 'D:/Unreal/FPSMultiPlayerBP/Content/Blueprints/Lobby/LobbyGM.uasset'
